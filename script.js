@@ -1,3 +1,16 @@
+let crsr = document.querySelector("#cursor");
+let blur = document.querySelector("#cursor-blur");
+document.addEventListener('mousemove', function(dets){
+    setTimeout(() => {
+        crsr.style.left = dets.x-10+"px";
+        crsr.style.top = dets.y-10+"px";
+    }, 150);
+    setTimeout(() => {
+        blur.style.left = dets.x - 225 +"px";
+        blur.style.top = dets.y - 225 +"px";
+    }, 300);
+});
+
 gsap.to("#header", {
     backgroundColor : "#000000",
     height: "80px" ,
