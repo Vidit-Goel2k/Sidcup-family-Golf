@@ -270,7 +270,7 @@ video{
 #green-div{
     height: 46vh;
     display: flex;
-    background-color: #95c11e;
+    background: linear-gradient(to left bottom, #1AA238 , #ADE023);
     align-items: center;
     justify-content: space-between;
 }
