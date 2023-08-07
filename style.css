@@ -25,7 +25,7 @@ html, body{
     padding: 0px 98px;
     gap: 48px;
     position: fixed;
-    z-index: 20;
+    z-index: 999;
 }
 
 #header img{
@@ -38,17 +38,17 @@ html, body{
     background-color: #95c11e;
     border-radius: 50%;
     position: fixed;
-    z-index: 10;
+    z-index: 99;
 }
 
 #cursor-blur{
     height: 450px;
     width: 450px;
-    background-color: rgba(150, 193, 30, 0.208);
+    background-color: rgba(150, 193, 30, 0.249);
     border-radius: 50%;
     position: fixed;
     filter: blur(40px);
-    z-index: 1;
+    z-index: 9;
 }
 
 #navbar{
@@ -69,13 +69,12 @@ video{
     width: 100%;
     object-fit: cover;
     position: fixed;
-    z-index: -25;
+    z-index: -1;
 }
 
 #main{
     position: relative;
     background: rgba(0, 0, 0, 0.65);
-    z-index: -15;
 }
 
 #page1{
@@ -87,6 +86,7 @@ video{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    z-index: 10;
 }
 
 #page1 h1{
@@ -102,7 +102,7 @@ video{
     top: -4px;
     left: -6px;
     text-shadow: -1px -1px 0 #95c11e, 1px -1px 0 #95c11e, -1px 1px 0 #95c11e, 1px 1px 0 #95c11e;
-    z-index: -20;
+    z-index: -1;
 }
 
 #page1 h2{
@@ -122,6 +122,7 @@ video{
 #page2{
     height: 100vh;
     width: 100%;
+    z-index: 10;
 }
 
 #scroller{
@@ -130,6 +131,7 @@ video{
     overflow-x: auto;
     overflow-y: hidden;
     position: relative;
+    z-index: 10;
 }
 
 #scroller::-webkit-scrollbar{
@@ -143,7 +145,7 @@ video{
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;  
-    z-index: 30;
+    /* z-index: 1; */
 }
 
 #scroller h4{
