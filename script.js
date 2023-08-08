@@ -77,8 +77,28 @@ gsap.from(".card", {
     },
 });
 
-// gsap.from("#quote-left", {
-//     x:-70,
-//     x:-70,
+gsap.from("#quote-left", {
+    x:-90,
+    y:-75,
+    scrollTrigger:{
+        trigger:"#quote-left",
+        scroller:"body",
+        // markers:true,
+        start:"top 75%",
+        end:"top 60%",
+        scrub:4,
+    }
+});
 
-// })
+gsap.from("#quote-right", {
+    x:88,
+    y:70,
+    scrollTrigger:{
+        trigger:"#quote-left",
+        scroller:"body",
+        markers:true,
+        start:"top 75%",
+        end:"top 60%",
+        scrub:4,
+    }
+});
