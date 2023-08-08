@@ -96,7 +96,7 @@ gsap.from("#quote-right", {
     scrollTrigger:{
         trigger:"#quote-left",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 75%",
         end:"top 60%",
         scrub:4,
