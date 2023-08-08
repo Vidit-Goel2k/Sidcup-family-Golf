@@ -205,7 +205,7 @@ video{
     line-height: 30px;    
 }
 
-#cards-container{
+#page2 #cards-container{
     /* background-color: red;  */
     height: 60vh;
     display: flex;
@@ -217,7 +217,7 @@ video{
     margin-bottom: 80px;
 }
 
-.card{
+#page2 .card{
     height: 100%;
     width: 24%;
     /* background-color: blue; */
@@ -228,17 +228,17 @@ video{
     transition: all ease 0.6s;
 }
 
-#card1{
+#page2 #card1{
     background-image: url(assets/card1.avif);
 }
-#card2{
+#page2 #card2{
     background-image: url(assets/card2.webp);
 }
-#card3{
+#page2 #card3{
     background-image: url(assets/card3.avif);
 }
 
-.overlay{
+#page2 .overlay{
     height: 100%;
     width: 100%;
     background-color: #95c11e;
@@ -248,7 +248,7 @@ video{
     transition: all ease 0.6s;
 }
 
-.overlay h4{
+#page2 .overlay h4{
     color: #000000;
     font-size: 32px;
     font-weight: 800;
@@ -256,16 +256,16 @@ video{
     margin-bottom: 20px;
 }
 
-.overlay p{
+#page2 .overlay p{
     color: #000000;
     font-size: 18px;
 }
 
-.card:hover .overlay{
+#page2 .card:hover .overlay{
     opacity: 1;
 }
 
-.card:hover{
+#page2 .card:hover{
     transform: rotate3d(-1,1,0,20deg);
 }
 
@@ -329,4 +329,77 @@ video{
 #quote-right{
     right: 12%;
     bottom: 30%;
+}
+
+#page4{
+    min-height:50vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page4 #cards-container{
+    height: 25vh;
+    gap: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 80px;
+}
+
+#page4 .card{
+    background-color: blue;
+    height: 100%;
+    width: 24%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page4 .products{
+    background-color: #95c11e;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.6s;
+}
+
+#page4 h4{
+    color: #000000;
+    font-size: 35px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+#page4 .overlay img{
+    height: 100%;
+    width: 100%;
+}
+
+#page4 .card:hover .products{
+    background: rgba(0, 0, 0, 0.452);
+}
+
+#page4 .card:hover .products h4{
+    color: #fff;
+}
+
+#elem {
+    font-size: 78px;
+    position: absolute;
+    top:-4.5%;
+    color: transparent;
+    font-weight: 900;
+    -webkit-text-stroke: 0.01px #fff;
 }

@@ -23,6 +23,22 @@ navItems.forEach(e => {
     })
 });
 
+
+let cardItems = document.querySelectorAll(".card");
+
+cardItems.forEach(e => {
+    e.addEventListener("mouseenter", () =>{
+        crsr.style.scale = 3;
+        crsr.style.border = "1px solid #fff";
+        crsr.style.backgroundColor = "transparent";
+    })
+    e.addEventListener("mouseleave", () =>{
+        crsr.style.scale = 1;
+        crsr.style.border = "none";
+        crsr.style.backgroundColor = "#95c11e" ;
+    })
+});
+
 gsap.to("#nav", {
     backgroundColor : "#000000",
     height: "80px" ,
@@ -63,7 +79,7 @@ gsap.from("#about-us img, #about-us-in", {
     },
 });
 
-gsap.from(".card", {
+gsap.from("#page2 .card", {
     scale:0.5,
     opacity:0,
     duration:1,
@@ -100,5 +116,16 @@ gsap.from("#quote-right", {
         start:"top 75%",
         end:"top 60%",
         scrub:4,
+    }
+});
+
+gsap.from("#elem", {
+    y:50,
+    scrollTrigger:{
+        trigger:"#elem",
+        scroller:"body",
+        start:"top 75%",
+        end:"top 70%",
+        scrub:3,
     }
 });
