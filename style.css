@@ -292,3 +292,39 @@ video{
 #start{
     rotate: 180deg;
 }
+
+#page3{
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+}
+
+#reviews{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reviews p{
+    width: 60%;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.quotes{
+    position: absolute;
+    height: 60px;
+}
+
+#quote-left{
+    left: 5%;
+    top: 15%;
+}
+#quote-right{
+    right: 5%;
+    bottom: 15%;
+}
